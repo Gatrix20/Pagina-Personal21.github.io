@@ -299,6 +299,11 @@ html {
   
  /* SECCION HABILIDADES */
 
+ h4 {
+  color: #fc7c8f;
+}
+
+
 /* Contenedor de la sección habilidades */
 .skills {
     background-color: #252A2E;
