@@ -634,76 +634,75 @@ footer .arriba{
     font-size: 18px;
 }
   
+/* SECCION RESPONSIVE */
 
-  /* SECCION RESPONSIVE */
-  
-  /* Estilos para pantallas de hasta 980px de ancho */
-  @media screen and (max-width: 980px) {
-    .skills .fila {
-      flex-direction: column;
-    }
-  
-    .skills .fila .col {
-      flex-basis: 100%;
-    }
-  
-    .curriculum .fila {
-      flex-direction: column;
-    }
-  
-    .curriculum .fila .col {
-      flex-basis: 100%;
-      border-right: none;
-      border-left: none;
-    }
+/* Estilos para pantallas de hasta 980px de ancho */
+@media screen and (max-width: 980px) {
+  .skills .fila {
+    flex-direction: column;
   }
-  
-  /* Estilos para pantallas de hasta 768px de ancho */
-  @media screen and (max-width: 768px) {
-    .skills h2,
-    .curriculum h2,
-    .portfolio h2 {
-      font-size: 36px;
-    }
-  
-    .skills .fila .col {
-      padding: 0;
-    }
-  
-    .curriculum .fila .col {
-      padding: 0;
-      border-right: none;
-      border-left: none;
-    }
-  
-    .portfolio .galeria {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-  }
-    
 
-  /* Estilos para pantallas de hasta 480px de ancho */
-  @media screen and (max-width: 480px) {
-    .skills .contenido-seccion,
-    .curriculum .contenido-seccion,
-    .portfolio .contenido-seccion {
-      padding: 20px;
-    }
-  
-    .skills h2,
-    .curriculum h2,
-    .portfolio h2 {
-      font-size: 24px;
-    }
-  
-    .skills .fila .col,
-    .curriculum .fila .col {
-      flex-basis: 100%;
-      padding: 0;
-    }
-  
-    .portfolio .galeria {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+  .skills .fila .col {
+    flex-basis: 100%;
   }
+
+  .curriculum .fila {
+    flex-direction: column;
+  }
+
+  .curriculum .fila .col {
+    flex-basis: 100%;
+    border-right: none;
+    border-left: none;
+  }
+}
+
+/* Estilos para pantallas de hasta 768px de ancho */
+@media screen and (max-width: 768px) {
+  .skills h2,
+  .curriculum h2,
+  .portfolio h2 {
+    font-size: 26px; /* Disminuir un poco el tamaño de los títulos */
+  }
+
+  .skills .fila .col {
+    padding: ;
+  }
+
+  .curriculum .fila .col {
+    padding: 0;
+    border-right: none;
+    border-left: none;
+  }
+
+  .portfolio .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Estilos para pantallas de hasta 480px de ancho */
+@media screen and (max-width: 480px) {
+  .skills .contenido-seccion,
+  .curriculum .contenido-seccion,
+  .portfolio .contenido-seccion {
+    padding: 10px; /* Reducir el espacio interno de las secciones */
+  }
+
+  .skills h2,
+  .curriculum h2,
+  .portfolio h2 {
+    font-size: 20px; /* Reducir el tamaño de los títulos aún más */
+  }
+
+  .skills .fila .col,
+  .curriculum .fila .col {
+    flex-basis: 100%;
+    padding: 0;
+  }
+
+  .portfolio .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Disminuir el tamaño de las imágenes de la galería */
+  }
+}
+
   
